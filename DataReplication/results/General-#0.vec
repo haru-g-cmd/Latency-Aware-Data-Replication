@@ -1,0 +1,102 @@
+version 3
+run General-0-20250101-20:03:00-20108
+attr configname General
+attr datetime 20250101-20:03:00
+attr datetimef 20250101-200300
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network DataReplicationNetwork
+attr processid 20108
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config network DataReplicationNetwork
+config sim-time-limit 2000s
+config **.edgeNode[*].dataAccessRate 10
+config *.seed 42
+config *.recordEventStats true
+config check-signals true
+config **.userRequestedData.result-recording-modes vector,histogram
+config **.userDataReceived.result-recording-modes vector,histogram
+config **.userRequestDelay.result-recording-modes vector,histogram
+config **.edgeRequestCore.result-recording-modes vector,histogram
+config **.edgeHaveData.result-recording-modes vector,histogram
+config **.edgeHitMissRatio.result-recording-modes vector,histogram
+config **.coreTimeTaken.result-recording-modes vector,histogram
+
+vector 0 DataReplicationNetwork.edgeNode1 edgeRequestCore:vector ETV
+attr recordingmode vector
+attr title "Requested Core for data"
+vector 1 DataReplicationNetwork.edgeNode1 edgeHaveData:vector ETV
+attr recordingmode vector
+attr title "Already had data"
+vector 2 DataReplicationNetwork.edgeNode1 edgeHitMissRatio:vector ETV
+attr recordingmode vector
+attr title "Hit/Miss Ratio"
+vector 3 DataReplicationNetwork.edgeNode2 edgeRequestCore:vector ETV
+attr recordingmode vector
+attr title "Requested Core for data"
+vector 4 DataReplicationNetwork.edgeNode2 edgeHaveData:vector ETV
+attr recordingmode vector
+attr title "Already had data"
+vector 5 DataReplicationNetwork.edgeNode2 edgeHitMissRatio:vector ETV
+attr recordingmode vector
+attr title "Hit/Miss Ratio"
+vector 6 DataReplicationNetwork.edgeNode3 edgeRequestCore:vector ETV
+attr recordingmode vector
+attr title "Requested Core for data"
+vector 7 DataReplicationNetwork.edgeNode3 edgeHaveData:vector ETV
+attr recordingmode vector
+attr title "Already had data"
+vector 8 DataReplicationNetwork.edgeNode3 edgeHitMissRatio:vector ETV
+attr recordingmode vector
+attr title "Hit/Miss Ratio"
+vector 9 DataReplicationNetwork.edgeNode4 edgeRequestCore:vector ETV
+attr recordingmode vector
+attr title "Requested Core for data"
+vector 10 DataReplicationNetwork.edgeNode4 edgeHaveData:vector ETV
+attr recordingmode vector
+attr title "Already had data"
+vector 11 DataReplicationNetwork.edgeNode4 edgeHitMissRatio:vector ETV
+attr recordingmode vector
+attr title "Hit/Miss Ratio"
+vector 12 DataReplicationNetwork.edgeNode5 edgeRequestCore:vector ETV
+attr recordingmode vector
+attr title "Requested Core for data"
+vector 13 DataReplicationNetwork.edgeNode5 edgeHaveData:vector ETV
+attr recordingmode vector
+attr title "Already had data"
+vector 14 DataReplicationNetwork.edgeNode5 edgeHitMissRatio:vector ETV
+attr recordingmode vector
+attr title "Hit/Miss Ratio"
+vector 15 DataReplicationNetwork.coreNode1 coreTimeTaken:vector ETV
+attr recordingmode vector
+attr title "Time taken to send data"
+vector 16 DataReplicationNetwork.user1 userRequestedData:vector ETV
+attr recordingmode vector
+attr title "The number of requests sent out"
+vector 17 DataReplicationNetwork.user1 userDataReceived:vector ETV
+attr recordingmode vector
+attr title "The number of data packets received"
+vector 18 DataReplicationNetwork.user1 userRequestDelay:vector ETV
+attr recordingmode vector
+attr title "Time between sending req and getting data"
+vector 19 DataReplicationNetwork.user2 userRequestedData:vector ETV
+attr recordingmode vector
+attr title "The number of requests sent out"
+vector 20 DataReplicationNetwork.user2 userDataReceived:vector ETV
+attr recordingmode vector
+attr title "The number of data packets received"
+vector 21 DataReplicationNetwork.user2 userRequestDelay:vector ETV
+attr recordingmode vector
+attr title "Time between sending req and getting data"
+vector 22 DataReplicationNetwork.user3 userRequestedData:vector ETV
+attr recordingmode vector
+attr title "The number of requests sent out"
+vector 2
