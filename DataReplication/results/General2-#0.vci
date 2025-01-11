@@ -1,0 +1,263 @@
+file 118065 1734045078                                          
+version 3
+run General-0-20241212-18:10:32-18676
+attr configname General
+attr datetime 20241212-18:10:32
+attr datetimef 20241212-181032
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network DataReplicationNetwork
+attr processid 18676
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config sim-time-limit 50s
+config network DataReplicationNetwork
+config sim-time-limit 1000s
+config **.edgeNode[*].dataAccessRate 10
+config *.seed 42
+config *.recordEventStats true
+config check-signals true
+config **.userRequestedData.result-recording-modes vector,histogram
+config **.userDataReceived.result-recording-modes vector,histogram
+config **.userRequestDelay.result-recording-modes vector,histogram
+config **.edgeRequestCore.result-recording-modes vector,histogram
+config **.edgeHaveData.result-recording-modes vector,histogram
+config **.edgeHitMissRatio.result-recording-modes vector,histogram
+config **.coreTimeTaken.result-recording-modes vector,histogram
+
+vector 0 DataReplicationNetwork.edgeNode1 edgeRequestCore:vector ETV
+attr recordingmode vector
+attr title "Requested Core for data"
+vector 1 DataReplicationNetwork.edgeNode1 edgeHaveData:vector ETV
+attr recordingmode vector
+attr title "Already had data"
+vector 2 DataReplicationNetwork.edgeNode1 edgeHitMissRatio:vector ETV
+attr recordingmode vector
+attr title "Hit/Miss Ratio"
+vector 3 DataReplicationNetwork.edgeNode2 edgeRequestCore:vector ETV
+attr recordingmode vector
+attr title "Requested Core for data"
+vector 4 DataReplicationNetwork.edgeNode2 edgeHaveData:vector ETV
+attr recordingmode vector
+attr title "Already had data"
+vector 5 DataReplicationNetwork.edgeNode2 edgeHitMissRatio:vector ETV
+attr recordingmode vector
+attr title "Hit/Miss Ratio"
+vector 6 DataReplicationNetwork.edgeNode3 edgeRequestCore:vector ETV
+attr recordingmode vector
+attr title "Requested Core for data"
+vector 7 DataReplicationNetwork.edgeNode3 edgeHaveData:vector ETV
+attr recordingmode vector
+attr title "Already had data"
+vector 8 DataReplicationNetwork.edgeNode3 edgeHitMissRatio:vector ETV
+attr recordingmode vector
+attr title "Hit/Miss Ratio"
+vector 9 DataReplicationNetwork.edgeNode4 edgeRequestCore:vector ETV
+attr recordingmode vector
+attr title "Requested Core for data"
+vector 10 DataReplicationNetwork.edgeNode4 edgeHaveData:vector ETV
+attr recordingmode vector
+attr title "Already had data"
+vector 11 DataReplicationNetwork.edgeNode4 edgeHitMissRatio:vector ETV
+attr recordingmode vector
+attr title "Hit/Miss Ratio"
+vector 12 DataReplicationNetwork.edgeNode5 edgeRequestCore:vector ETV
+attr recordingmode vector
+attr title "Requested Core for data"
+vector 13 DataReplicationNetwork.edgeNode5 edgeHaveData:vector ETV
+attr recordingmode vector
+attr title "Already had data"
+vector 14 DataReplicationNetwork.edgeNode5 edgeHitMissRatio:vector ETV
+attr recordingmode vector
+attr title "Hit/Miss Ratio"
+vector 15 DataReplicationNetwork.coreNode1 coreTimeTaken:vector ETV
+attr recordingmode vector
+attr title "Time taken to send data"
+vector 16 DataReplicationNetwork.user1 userRequestedData:vector ETV
+attr recordingmode vector
+attr title "The number of requests sent out"
+vector 17 DataReplicationNetwork.user1 userDataReceived:vector ETV
+attr recordingmode vector
+attr title "The number of data packets received"
+vector 18 DataReplicationNetwork.user1 userRequestDelay:vector ETV
+attr recordingmode vector
+attr title "Time between sending req and getting data"
+vector 19 DataReplicationNetwork.user2 userRequestedData:vector ETV
+attr recordingmode vector
+attr title "The number of requests sent out"
+vector 20 DataReplicationNetwork.user2 userDataReceived:vector ETV
+attr recordingmode vector
+attr title "The number of data packets received"
+vector 21 DataReplicationNetwork.user2 userRequestDelay:vector ETV
+attr recordingmode vector
+attr title "Time between sending req and getting data"
+vector 22 DataReplicationNetwork.user3 userRequestedData:vector ETV
+attr recordingmode vector
+attr title "The number of requests sent out"
+vector 23 DataReplicationNetwork.user3 userDataReceived:vector ETV
+attr recordingmode vector
+attr title "The number of data packets received"
+vector 24 DataReplicationNetwork.user3 userRequestDelay:vector ETV
+attr recordingmode vector
+attr title "Time between sending req and getting data"
+vector 25 DataReplicationNetwork.user4 userRequestedData:vector ETV
+attr recordingmode vector
+attr title "The number of requests sent out"
+vector 26 DataReplicationNetwork.user4 userDataReceived:vector ETV
+attr recordingmode vector
+attr title "The number of data packets received"
+vector 27 DataReplicationNetwork.user4 userRequestDelay:vector ETV
+attr recordingmode vector
+attr title "Time between sending req and getting data"
+vector 28 DataReplicationNetwork.user5 userRequestedData:vector ETV
+attr recordingmode vector
+attr title "The number of requests sent out"
+vector 29 DataReplicationNetwork.user5 userDataReceived:vector ETV
+attr recordingmode vector
+attr title "The number of data packets received"
+vector 30 DataReplicationNetwork.user5 userRequestDelay:vector ETV
+attr recordingmode vector
+attr title "Time between sending req and getting data"
+vector 31 DataReplicationNetwork.user6 userRequestedData:vector ETV
+attr recordingmode vector
+attr title "The number of requests sent out"
+vector 32 DataReplicationNetwork.user6 userDataReceived:vector ETV
+attr recordingmode vector
+attr title "The number of data packets received"
+vector 33 DataReplicationNetwork.user6 userRequestDelay:vector ETV
+attr recordingmode vector
+attr title "Time between sending req and getting data"
+vector 34 DataReplicationNetwork.user7 userRequestedData:vector ETV
+attr recordingmode vector
+attr title "The number of requests sent out"
+vector 35 DataReplicationNetwork.user7 userDataReceived:vector ETV
+attr recordingmode vector
+attr title "The number of data packets received"
+vector 36 DataReplicationNetwork.user7 userRequestDelay:vector ETV
+attr recordingmode vector
+attr title "Time between sending req and getting data"
+vector 37 DataReplicationNetwork.user8 userRequestedData:vector ETV
+attr recordingmode vector
+attr title "The number of requests sent out"
+vector 38 DataReplicationNetwork.user8 userDataReceived:vector ETV
+attr recordingmode vector
+attr title "The number of data packets received"
+vector 39 DataReplicationNetwork.user8 userRequestDelay:vector ETV
+attr recordingmode vector
+attr title "Time between sending req and getting data"
+vector 40 DataReplicationNetwork.user9 userRequestedData:vector ETV
+attr recordingmode vector
+attr title "The number of requests sent out"
+vector 41 DataReplicationNetwork.user9 userDataReceived:vector ETV
+attr recordingmode vector
+attr title "The number of data packets received"
+vector 42 DataReplicationNetwork.user9 userRequestDelay:vector ETV
+attr recordingmode vector
+attr title "Time between sending req and getting data"
+vector 43 DataReplicationNetwork.user10 userRequestedData:vector ETV
+attr recordingmode vector
+attr title "The number of requests sent out"
+vector 44 DataReplicationNetwork.user10 userDataReceived:vector ETV
+attr recordingmode vector
+attr title "The number of data packets received"
+vector 45 DataReplicationNetwork.user10 userRequestDelay:vector ETV
+attr recordingmode vector
+attr title "Time between sending req and getting data"
+0	7581 1688 12 2521 0.1 44.702000005542 65 1 65 2145 93665
+1	9269 499 11 2411 0.1 42.559999985991 20 1 20 210 2870
+2	9768 5438 11 2524 0.1 44.722500125319 147 0.125 1 41.574648387891 12.713081995812
+3	15206 2009 13 2493 0.1 44.227999797462 78 1 78 3081 161239
+4	17215 416 442 2428 8.313999986648 42.899999848007 16 1 16 136 1496
+5	17631 6172 13 2519 0.1 44.580750150982 171 0 0.18072289156627 18.74636660743 2.7293607346113
+6	23803 1778 15 2514 0.1 44.51999993473 69 1 69 2415 111895
+7	25581 541 88 2265 1.509999966621 40.404000109434 21 1 21 231 3311
+8	26122 5887 15 2514 0.1 44.51999993473 158 0 0.42857142857143 40.180802133755 10.868288288357
+9	32009 1834 17 2503 0.1 44.374000100789 71 1 71 2556 121836
+10	33843 505 142 2455 2.316000020504 43.447999975088 19 1 19 190 2470
+11	34348 6205 17 2518 0.1 44.552499940994 160 0 0.33333333333333 35.388021590627 8.5333039714605
+12	40553 2202 19 2499 0.1 44.370000122486 82 1 82 3403 187165
+13	42755 376 434 2527 8.222000105679 44.820000110565 14 1 14 105 1015
+14	43131 6644 19 2527 0.1 44.820000110565 177 0 0.18867924528302 20.241472249068 2.9608940130649
+15	49775 14550 22 2522 0.1 44.702000005542 365 0.815249979496 276.66849969327 51102.547190562 9487573.9790272
+16	64325 1280 1 2520 0.1 44.702000005542 48 1 48 1176 38024
+17	65605 1237 44 2482 0.321000000834 44.113416625557 46 1 46 1081 33511
+18	66842 1788 44 2482 0.321000000834 44.113416625557 46 0.221000000834 2.898583292961 67.35658305883 121.87606014282
+19	68630 990 2 2486 0.1 44.180000106246 37 1 37 703 17575
+20	69620 948 118 2497 2.002249991894 44.304166773708 35 1 35 630 14910
+21	70568 1374 118 2497 2.002249991894 44.304166773708 35 0.359833240509 14.651333397627 65.31325010061 306.70413812764
+22	71942 1281 3 2457 0.1 43.708000166718 48 1 48 1176 38024
+23	73223 1272 114 2512 1.896666622162 44.488333506886 47 1 47 1128 35720
+24	74495 1842 114 2512 1.896666622162 44.488333506886 47 0.293416678905 29.648333413902 110.06491660923 1042.9440649491
+25	76337 1236 4 2492 0.1 44.227999797462 46 1 46 1081 33511
+26	77573 1223 77 2496 1.302250003815 44.25499986708 45 1 45 1035 31395
+27	78796 1767 77 2496 1.302250003815 44.25499986708 45 0.444500014186 44.25499986708 155.68899938165 3788.2858336595
+28	80563 1340 5 2513 0.1 44.51999993473 50 1 50 1275 42925
+29	81903 1302 48 2490 0.679249992966 44.190833343563 48 1 48 1176 38024
+30	83205 1882 48 2490 0.679249992966 44.190833343563 48 0.254000008106 2.909083366394 81.152833268043 158.84882409942
+31	85087 1067 6 2467 0.1 43.834000008553 40 1 40 820 22140
+32	86154 1081 63 2511 1.105083322525 44.435000079125 40 1 40 820 22140
+33	87235 1566 63 2511 1.105083322525 44.435000079125 40 0.254000008106 2.878749966622 60.160083621736 116.85819248367
+34	88801 1126 7 2461 0.1 43.723999968174 42 1 42 903 25585
+35	89927 1114 116 2517 1.938833361864 44.54799999893 41 1 41 861 23821
+36	91041 1612 116 2517 1.938833361864 44.54799999893 41 0.303333327175 31.415750002862 95.75991687775 1112.9689321747
+37	92653 1282 8 2502 0.1 44.374000100789 48 1 48 1176 38024
+38	93935 1276 99 2465 1.627750015259 43.762000052629 47 1 47 1128 35720
+39	95211 1842 99 2465 1.627750015259 43.762000052629 47 0.293416678905 2.909083366394 73.330416455864 136.80429186067
+40	97053 1233 9 2445 0.1 43.282000204921 46 1 46 1081 33511
+41	98286 1192 119 2506 2.033249965309 44.388166865707 44 1 44 990 29370
+42	99478 1724 119 2506 2.033249965309 44.388166865707 44 0.302166670561 2.878749966622 75.376749739047 155.92830036625
+43	101202 1372 10 2529 0.1 44.832000110669 51 1 51 1326 45526
+44	102574 1277 100 2452 1.640583312511 43.417250214516 47 1 47 1128 35720
+45	103851 1849 100 2452 1.640583312511 43.417250214516 47 0.138583242893 43.417250214516 173.26725047379 4463.0498452151
+0	105700 268 2563 2814 45.546000162513 49.496000239999 10 66 75 705 49785
+1	105968 27 2630 2630 46.588000217826 46.588000217826 1 21 21 21 441
+2	105995 958 2533 2828 44.88225011006 49.828000227363 24 0.21875 0.23863636363636 5.4850815515604 1.2544332376592
+3	106953 188 2546 2809 45.195999792217 49.46200011522 7 79 85 574 47096
+4	107141 81 2560 2805 45.512000186745 49.403999841211 3 17 19 54 974
+5	107222 682 2543 2809 45.052999785541 49.46200011522 17 0.16842105263158 0.18446601941748 3.0181211737728 0.5361413315517
+6	107904 294 2576 2830 45.766000049561 49.86799998432 11 70 80 825 61985
+8	108198 865 2566 2834 45.54999990612 49.973750116675 22 0.20792079207921 0.23333333333333 4.8177785771866 1.0562135628596
+9	109063 159 2556 2821 45.457999935749 49.632000057396 6 72 77 447 33319
+10	109222 84 2699 2802 47.562000064549 49.389999976757 3 20 22 63 1325
+11	109306 609 2552 2821 45.404000072179 49.632000057396 15 0.20430107526882 0.22448979591837 3.2070849362768 0.6864740296518
+12	109915 335 2530 2825 44.832000110669 49.684000214934 12 83 94 1062 94130
+14	110250 978 2530 2825 44.832000110669 49.684000214934 24 0.12962962962963 0.14432989690722 3.2780486545145 0.44827958329998
+15	111228 1869 2531 2831 44.832000110669 49.86799998432 46 276.79799969494 307.81924952567 13435.786732286 3927971.9912537
+16	113097 139 2610 2771 46.239999993144 48.81599999815 5 49 53 255 13015
+17	113236 168 2573 2792 45.709583325683 49.260500012336 6 47 52 297 14719
+18	113404 240 2573 2792 45.709583325683 49.260500012336 6 0.444500014186 2.350833415985 6.679750055075 9.8361565081083
+19	113644 167 2562 2813 45.546000162513 49.496000239999 6 38 43 243 9859
+20	113811 168 2554 2777 45.445833484084 48.911250183732 6 36 41 231 8911
+21	113979 240 2554 2777 45.445833484084 48.911250183732 6 0.508666664362 2.395166635514 9.439166635274 18.113826324458
+22	114219 139 2559 2808 45.512000186745 49.46200011522 5 49 53 255 13015
+23	114358 140 2574 2833 45.744416876141 49.933000130956 5 48 52 250 12510
+24	114498 198 2574 2833 45.744416876141 49.933000130956 5 0.3396666646 2.036416709423 6.583000004291 10.801348719362
+25	114696 140 2545 2804 45.195999792217 49.403999841211 5 47 51 245 12015
+26	114836 140 2600 2735 46.152999809383 48.153249806164 5 46 50 240 11530
+27	114976 198 2600 2735 46.152999809383 48.153249806164 5 0.50108332932 2.29191660881 6.325666621327 10.508290703372
+28	115174 111 2617 2829 46.321999980506 49.86799998432 4 51 54 210 11030
+29	115285 112 2542 2770 44.990833295879 48.685083298381 4 49 52 202 10206
+30	115397 158 2542 2770 44.990833295879 48.685083298381 4 0.50108332932 2.403333306313 7.113166585565 14.954227283532
+31	115555 194 2575 2794 45.766000049561 49.308000089972 7 41 47 308 13580
+32	115749 167 2632 2819 46.635750072449 49.592166649549 6 41 46 261 11371
+33	115916 239 2632 2819 46.635750072449 49.592166649549 6 0.303333327175 2.898583292961 7.715166553855 16.664495783763
+34	116155 138 2555 2801 45.457999935749 49.389999976757 5 43 47 225 10135
+35	116293 111 2571 2769 45.657166650894 48.65866660178 4 42 45 174 7574
+36	116404 158 2571 2769 45.657166650894 48.65866660178 4 0.303333327175 2.011333346367 5.022500023247 8.4747148056992
+37	116562 111 2582 2820 45.94000008553 49.632000057396 4 49 52 202 10206
+38	116673 112 2641 2784 46.777333407102 49.120666711029 4 48 51 198 9806
+39	116785 161 2641 2784 46.777333407102 49.120666711029 4 1.050666630268 49.120666711029 54.672333328423 2424.120014989
+40	116946 196 2534 2824 44.926000258327 49.684000214934 7 47 53 350 17528
+41	117142 140 2550 2705 45.271000227332 47.620750269294 5 45 49 235 11055
+42	117282 200 2550 2705 45.271000227332 47.620750269294 5 1.163166642189 2.457000017166 8.632166683673 16.114080869796
+43	117482 111 2590 2779 46.060000155492 49.024000201746 4 52 55 214 11454
+44	117593 193 2541 2818 44.9880001083 49.581333492323 7 48 54 357 18235
+45	117786 277 2541 2818 44.9880001083 49.581333492323 7 0.167999997735 2.403333306313 7.365166679024 12.527013965351
+
